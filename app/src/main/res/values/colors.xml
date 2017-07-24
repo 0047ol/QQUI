@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="blue">#88d9f6</drawable>
+	<drawable name="dialog_btn_normal">#dddddd</drawable>
+	<drawable name="dialog_btn_pressed">#cccccc</drawable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom 2dp Shadow -->
+	<item android:top="68dp">//阴影的偏移高度
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="-90"
+                android:startColor="#20000000"
+                android:endColor="#00000000"
+                android:type="linear"
+			/>
+        </shape>
+    </item>
+	
+    <item android:bottom="9dp">
+        <shape android:shape="rectangle">
+            //阴影的渐变颜色
+            <solid android:color="#000000"/>//布局的背景颜色
+        </shape>
+    </item>
+
+    <!-- White Top color -->
+    
+</layer-list>
