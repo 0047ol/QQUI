@@ -52,13 +52,7 @@ public class QQDialog
     private boolean isNegativeButtonShow=false;
     private boolean isNeutralButtonShow=false;
     private boolean isEditText=false;
-	//private boolean isListView5=false;
-    //private boolean isListView6=false;
-    //private int postion;
     private View mView;
-    //private LinearLayout layouts;
-    private int defItem;
-    private int choiceMode;
     private QQDialog.Builder mBuilder;
     private View.OnClickListener  PositiveListener,NegativeListener,NeutralListener;
 	private ViewGroup v2;
@@ -66,9 +60,6 @@ public class QQDialog
 	private int mViewId=0;
 	private boolean CanceledOnTouchOutside=true;
 	private boolean Cancelable=true;
-
-
-	// EditText Edits = (EditText) findViewById(R.id.Edits);
 
     public QQDialog show()
 	{
@@ -106,7 +97,6 @@ public class QQDialog
 		private View v1view;
 		private View neutralview;
 		private View positiveview;
-		//private ScrollView scrollView;
 
         private Builder()
 		{
@@ -140,23 +130,20 @@ public class QQDialog
             mFrameLayout = (FrameLayout)dialog.findViewById(R.id.custom_miui_dialog_view);
             v2 = (ViewGroup)dialog.findViewById(R.id.v2);
 			Edits = (EditText)dialog.findViewById(R.id.Edits);
-			//scrollView=(ScrollView)dialog.findViewById(R.id.parallax_scrollView);
 			PositiveButton.setTextColor(Color.parseColor("#FF333333"));
 			NegativeButton.setTextColor(Color.parseColor("#FF333333"));
 			NeutralButton.setTextColor(Color.parseColor("#FF333333"));
 			Edits.setVisibility(View.GONE);
-			//scrollView.setVisibility(View.GONE);
 			
             ScrollView scrollView=new ScrollView(mContext);
             mMessage = new TextView(mContext);
-            mMessage.setPadding(90, 0, 90, 0);
+            mMessage.setPadding(90,30,90,0);
             mMessage.setTextColor(Color.parseColor("#FF333333"));
             mMessage.setTextSize(16);
             mMessage.setLineSpacing(1, 1.3f);
             scrollView.addView(mMessage);
             mFrameLayout.addView(scrollView);
 
-			
             if (isEditText == true)
 			{
 				Edits.setVisibility(View.VISIBLE);
@@ -187,7 +174,7 @@ public class QQDialog
 				v2.setLayoutParams(lp); 
 				LayoutInflater inflater = LayoutInflater.from(mContext);
 				LinearLayout mView = (LinearLayout) inflater.inflate(mViewId, null); 
-                mView.setPadding(50, 0, 50,50);
+                mView.setPadding(0,0,0,0);
                 mFrameLayout.addView(mView);
 			}
             else if (mViewId == 0 && mView != null)
@@ -195,7 +182,7 @@ public class QQDialog
 				LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);  
 				lp.setMargins(0,0,-30,0);  
 				v2.setLayoutParams(lp); 
-				mView.setPadding(50, 0, 50,50);
+				mView.setPadding(50,50,50,50);
                 mFrameLayout.addView(mView);
             }
 			
@@ -299,18 +286,6 @@ public class QQDialog
             viewButton();
 
         }
-
-		private InputMethodManager getSystemService(String iNPUT_METHOD_SERVICE)
-		{
-			// TODO: Implement this method
-			return null;
-		}
-
-		private Resources getResources()
-		{
-			// TODO: Implement this method
-			return null;
-		}
 
         private void viewButton()
 		{

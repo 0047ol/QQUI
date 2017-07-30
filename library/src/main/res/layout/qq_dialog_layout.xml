@@ -27,13 +27,13 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="center|center_vertical|center_horizontal"
-			android:paddingBottom="10dp"
-			android:layout_marginTop="5dp"/>
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"/>
 
 	</LinearLayout>
 
 	<LinearLayout
-		android:layout_height="0dp"
+		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:layout_weight="1"
 		android:orientation="vertical">
@@ -54,7 +54,7 @@
 			android:layout_marginRight="35dp"
 			android:textColorHint="#5B5A5A"
 			android:textSize="13sp"
-			android:layout_marginTop="6dp"
+			android:layout_marginTop="12dp"
 			android:selectAllOnFocus="true"/>
 
 	</LinearLayout>
@@ -91,8 +91,7 @@
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			style="?android:attr/borderlessButtonStyle"
-			android:layout_weight="1"
-			android:text="按钮1"/>
+			android:layout_weight="1"/>
 
 		<View
 			android:gravity="center"
@@ -110,8 +109,7 @@
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			style="?android:attr/borderlessButtonStyle"
-			android:layout_weight="1"
-			android:text="按钮2"/>
+			android:layout_weight="1"/>
 
 		<View
 			android:gravity="center"
@@ -129,8 +127,7 @@
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			style="?android:attr/borderlessButtonStyle"
-			android:layout_weight="1"
-			android:text="按钮3"/>
+			android:layout_weight="1"/>
 
 	</LinearLayout>
 
